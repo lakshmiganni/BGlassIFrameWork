@@ -1,0 +1,684 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validating the Trustpilot reviews of gumtree website",
+        "description": "",
+        "id": "iframe-feature;validating-the-trustpilot-reviews-of-gumtree-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6054716480,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Gumtree homepage",
+            "match": {
+              "location": "IFrameHandling.iNavigateToGumtreeHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 486182767,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I scroll down to see the Trustpilot reviews",
+            "match": {
+              "location": "IFrameHandling.iScrollDownToSeeTheTrustpilotReviews()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 362516804,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I can see the reviews given by Trustpilot",
+            "match": {
+              "location": "IFrameHandling.iCanSeeTheReviewsGivenByTrustpilot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 353098279,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on total reviews link",
+            "match": {
+              "location": "IFrameHandling.iClickOnTotalReviewsLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2702726558,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "A new trustpilot webpage is opened",
+            "match": {
+              "location": "IFrameHandling.aNewTrustpilotWebpageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1545312469,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I can see the total reviews in trustpilot website",
+            "match": {
+              "location": "IFrameHandling.iCanSeeTheTotalReviewsInTrustpilotWebsite()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 92233874,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "reviews listed in Trustpilot should match with the reviews in the Gumtree website",
+            "match": {
+              "location": "IFrameHandling.reviewsListedInTrustpilotShouldMatchWithTheReviewsInTheGumtreeWebsite()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "iFrame feature",
+    "description": "",
+    "id": "iframe-feature",
+    "keyword": "Feature",
+    "uri": "frames.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 18,
+        "name": "Verify login with invalid credentials",
+        "description": "",
+        "id": "login-to-guntree;verify-login-with-invalid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3615894725,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Gumtree homepage",
+            "match": {
+              "location": "IFrameHandling.iNavigateToGumtreeHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 854368515,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Login/SinUp button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginSinUpButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6933910609,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter Email as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginSteps.iEnterEmailAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78250853,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter Password as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginSteps.iEnterPasswordAs(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 312480075,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82313686,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the email error message as \"Please enter a valid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter a valid email address.",
+                  "offset": 34
+                }
+              ],
+              "location": "LoginSteps.iGetTheEmailErrorMessageAs(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44054581,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Password error message as \"Too short. Please enter at least 6 characters.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Too short. Please enter at least 6 characters.",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.passwordErrorMessageAs(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130542712,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Verify login with invalid credentials",
+        "description": "",
+        "id": "login-to-guntree;verify-login-with-invalid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2960265135,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Gumtree homepage",
+            "match": {
+              "location": "IFrameHandling.iNavigateToGumtreeHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2201307377,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Login/SinUp button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginSinUpButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2448715776,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter Email as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginSteps.iEnterEmailAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 70558871,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter Password as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginSteps.iEnterPasswordAs(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212161283,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62182844,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the email error message as \"Please enter a valid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter a valid email address.",
+                  "offset": 34
+                }
+              ],
+              "location": "LoginSteps.iGetTheEmailErrorMessageAs(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51505740,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Password error message as \"Too short. Please enter at least 6 characters.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Too short. Please enter at least 6 characters.",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.passwordErrorMessageAs(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118574349,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Verify login with invalid credentials",
+        "description": "",
+        "id": "login-to-guntree;verify-login-with-invalid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2776010680,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Gumtree homepage",
+            "match": {
+              "location": "IFrameHandling.iNavigateToGumtreeHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2111092619,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Login/SinUp button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginSinUpButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4478083679,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter Email as \"test@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginSteps.iEnterEmailAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 94768421,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter Password as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginSteps.iEnterPasswordAs(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 307939054,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98310774,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the email error message as \"Please enter a valid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter a valid email address.",
+                  "offset": 34
+                }
+              ],
+              "location": "LoginSteps.iGetTheEmailErrorMessageAs(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 57743218,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Password error message as \"Too short. Please enter at least 6 characters.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Too short. Please enter at least 6 characters.",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.passwordErrorMessageAs(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119434856,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Verify login with invalid credentials",
+        "description": "",
+        "id": "login-to-guntree;verify-login-with-invalid-credentials;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2639400379,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Gumtree homepage",
+            "match": {
+              "location": "IFrameHandling.iNavigateToGumtreeHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 570776313,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Login/SinUp button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginSinUpButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2334281108,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter Email as \"test@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginSteps.iEnterEmailAs(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 168069640,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter Password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginSteps.iEnterPasswordAs(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 765549668,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56675795,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I get the email error message as \"Please enter a valid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter a valid email address.",
+                  "offset": 34
+                }
+              ],
+              "location": "LoginSteps.iGetTheEmailErrorMessageAs(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61570303,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Password error message as \"Too short. Please enter at least 6 characters.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Too short. Please enter at least 6 characters.",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginSteps.passwordErrorMessageAs(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166006119,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login to Guntree",
+    "description": "",
+    "id": "login-to-guntree",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
