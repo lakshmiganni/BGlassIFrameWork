@@ -2,7 +2,7 @@
 
 
 1. Handled Gumtree Trustpilot reviews which were in an IFrame and compared the results with the TrustPilot website reviews. 
-2. Handled login feature with few invalid credentials to show how we can pass test data.
+2. Handled login feature with few invalid credentials to show one way of passing test data.
 
 
 3. Integrating the tests with Jenkins
